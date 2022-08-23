@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interaction_things",
+  "info": {
+    "singularName": "interaction-thing",
+    "pluralName": "interaction-things",
+    "displayName": "Interaction_Thing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "experiments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::experiment.experiment",
+      "inversedBy": "interaction_things"
+    },
+    "plate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plate.plate",
+      "inversedBy": "interaction_things"
+    }
+  }
+}

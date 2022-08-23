@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wells",
+  "info": {
+    "singularName": "well",
+    "pluralName": "wells",
+    "displayName": "Well",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position_index": {
+      "type": "string"
+    },
+    "plate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plate.plate",
+      "inversedBy": "wells"
+    },
+    "sample": {
+      "type": "string"
+    }
+  }
+}
