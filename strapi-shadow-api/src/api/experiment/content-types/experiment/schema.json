@@ -29,6 +29,9 @@
       "relation": "manyToMany",
       "target": "api::plate.plate",
       "mappedBy": "experiments"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

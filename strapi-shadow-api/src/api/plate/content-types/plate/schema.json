@@ -35,6 +35,9 @@
     },
     "wells_index": {
       "type": "json"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
