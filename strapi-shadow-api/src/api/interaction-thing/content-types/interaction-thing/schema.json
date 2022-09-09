@@ -4,16 +4,14 @@
   "info": {
     "singularName": "interaction-thing",
     "pluralName": "interaction-things",
-    "displayName": "Interaction_Thing"
+    "displayName": "Interaction_Thing",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "string"
-    },
     "experiments": {
       "type": "relation",
       "relation": "manyToMany",
@@ -25,6 +23,20 @@
       "relation": "manyToOne",
       "target": "api::plate.plate",
       "inversedBy": "interaction_things"
+    },
+    "name": {
+      "type": "string"
+    },
+    "shadow": {
+      "type": "json"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "BioPlateScope",
+        "Autoculture",
+        "Maxwell"
+      ]
     }
   }
 }

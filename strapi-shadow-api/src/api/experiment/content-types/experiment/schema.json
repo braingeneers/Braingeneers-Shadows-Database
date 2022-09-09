@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "plate": {
-      "type": "string"
-    },
     "name": {
       "type": "string"
     },
