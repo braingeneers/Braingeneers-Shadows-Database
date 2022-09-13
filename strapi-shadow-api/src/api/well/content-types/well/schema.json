@@ -26,6 +26,12 @@
     },
     "sample": {
       "type": "string"
+    },
+    "samples": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sample.sample",
+      "mappedBy": "well"
     }
   }
 }
