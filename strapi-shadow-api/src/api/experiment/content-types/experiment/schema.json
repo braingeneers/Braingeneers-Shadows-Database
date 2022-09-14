@@ -15,12 +15,6 @@
     "name": {
       "type": "string"
     },
-    "interaction_things": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::interaction-thing.interaction-thing",
-      "inversedBy": "experiments"
-    },
     "plates": {
       "type": "relation",
       "relation": "manyToMany",

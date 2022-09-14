@@ -24,9 +24,6 @@
       "target": "api::plate.plate",
       "inversedBy": "wells"
     },
-    "sample": {
-      "type": "string"
-    },
     "samples": {
       "type": "relation",
       "relation": "oneToMany",

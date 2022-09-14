@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "experiments": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::experiment.experiment",
-      "mappedBy": "interaction_things"
-    },
     "plate": {
       "type": "relation",
       "relation": "manyToOne",

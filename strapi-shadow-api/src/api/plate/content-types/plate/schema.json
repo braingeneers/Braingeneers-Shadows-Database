@@ -38,6 +38,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "image_parameters": {
+      "type": "json"
     }
   }
 }
