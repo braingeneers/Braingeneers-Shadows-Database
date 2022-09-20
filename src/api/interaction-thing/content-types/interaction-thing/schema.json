@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interaction_things",
+  "info": {
+    "singularName": "interaction-thing",
+    "pluralName": "interaction-things",
+    "displayName": "Interaction_Thing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plate.plate",
+      "inversedBy": "interaction_things"
+    },
+    "name": {
+      "type": "string"
+    },
+    "shadow": {
+      "type": "json"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "BioPlateScope",
+        "Autoculture",
+        "Maxwell"
+      ]
+    }
+  }
+}
