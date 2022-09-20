@@ -41,6 +41,12 @@
     },
     "image_parameters": {
       "type": "json"
+    },
+    "rows": {
+      "type": "integer"
+    },
+    "columns": {
+      "type": "integer"
     }
   }
 }
