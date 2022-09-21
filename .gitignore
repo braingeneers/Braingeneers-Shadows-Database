@@ -2,5 +2,7 @@ node_modules/
 .cache/
 .env
 .tmp/
+build/
 data.db
 credentials.py
+__pycache__/
