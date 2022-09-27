@@ -15,12 +15,6 @@
     "name": {
       "type": "string"
     },
-    "interaction_things": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::interaction-thing.interaction-thing",
-      "mappedBy": "plate"
-    },
     "experiments": {
       "type": "relation",
       "relation": "manyToMany",
@@ -47,6 +41,11 @@
     },
     "columns": {
       "type": "integer"
+    },
+    "interaction_things": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::interaction-thing.interaction-thing"
     }
   }
 }
