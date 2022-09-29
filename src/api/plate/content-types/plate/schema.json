@@ -44,8 +44,9 @@
     },
     "interaction_things": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::interaction-thing.interaction-thing"
+      "relation": "manyToMany",
+      "target": "api::interaction-thing.interaction-thing",
+      "inversedBy": "plates"
     }
   }
 }

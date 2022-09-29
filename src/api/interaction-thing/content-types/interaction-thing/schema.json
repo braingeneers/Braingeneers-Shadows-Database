@@ -34,6 +34,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::experiment.experiment"
+    },
+    "plates": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::plate.plate",
+      "inversedBy": "interaction_things"
     }
   }
 }
