@@ -1,6 +1,8 @@
 FROM node:16
 # Installing libvips-dev for sharp Compatability
 RUN apt-get update && apt-get install libvips-dev -y
+RUN apt-get install -y --no-install-recommends \
+        awscli 
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 RUN mkdir /root/.aws
