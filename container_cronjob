@@ -33,4 +33,5 @@
 # ==============================================================================
 
 # backup database
-@hourly aws --profile prp-braingeneers --endpoint https://s3-west.nrp-nautilus.io s3 cp /opt/app/.tmp/data.db s3://braingeneers/shadow_database_backup.db
+* * * * * aws --profile prp-braingeneers --endpoint https://s3-west.nrp-nautilus.io s3 cp /opt/app/.tmp/data.db s3://braingeneers/shadow_database_backup.db
+
