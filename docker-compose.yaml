@@ -17,6 +17,7 @@ services:
      # DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       NODE_ENV: ${NODE_ENV}
     volumes:
+      - ~/.aws/credentials:/root/.aws/credentials
       - ./config:/opt/app/config
       - ./data.db:/opt/app/.tmp/data.db
       - ./src:/opt/app/src
