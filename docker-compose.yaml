@@ -1,11 +1,12 @@
 version: "3"
 services:
-  strapi:
-    container_name: strapi
+  shadows-db:
+    container_name: strapi-shadows-db
     build: .
     image: mystrapi:latest
     restart: unless-stopped
     env_file: .env
+    network_mode: bridge
     environment:
      # DATABASE_CLIENT: ${DATABASE_CLIENT}
      # DATABASE_HOST: strapiDB
