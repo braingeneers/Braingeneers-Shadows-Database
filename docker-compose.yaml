@@ -6,7 +6,8 @@ services:
     image: mystrapi:latest
     restart: unless-stopped
     env_file: .env
-    network_mode: bridge
+    # must create shadows-network if it doesnt exist
+    network_mode: shadows-network
     environment:
      # DATABASE_CLIENT: ${DATABASE_CLIENT}
      # DATABASE_HOST: strapiDB
