@@ -1,6 +1,7 @@
 version: "3"
 services:
   shadows-db:
+    user: "0:989"
     container_name: strapi-shadows-db
     build: .
     image: mystrapi:latest

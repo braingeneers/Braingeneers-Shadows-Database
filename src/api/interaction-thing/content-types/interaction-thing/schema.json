@@ -39,7 +39,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::plate.plate",
-      "inversedBy": "interaction_things"
+      "mappedBy": "interaction_things"
     }
   }
 }

@@ -47,6 +47,9 @@
       "relation": "manyToMany",
       "target": "api::interaction-thing.interaction-thing",
       "inversedBy": "plates"
+    },
+    "active": {
+      "type": "boolean"
     }
   }
 }
